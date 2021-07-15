@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 29 18:11:20 2020
-
-@author: Hackie_Packie
-"""
-
 
 import image_slicer
 import cv2
@@ -257,7 +250,7 @@ def registration():
     
     def open():
         global loc
-        root.filename = filedialog.askopenfilename(initialdir =  "E:/Project/shrita/", title = "Select A File", filetype =(("png files","*.png"),("all files","*.*")))
+        root.filename = filedialog.askopenfilename(initialdir =  "task/", title = "Select A File", filetype =(("png files","*.png"),("all files","*.*")))
         #print("name:" , root.filename)
         loc = root.filename
         my_label = Label(root,text = root.filename)
@@ -455,7 +448,7 @@ def login():
     
     def open1():
        global loc1
-       log.filename = filedialog.askopenfilename(initialdir =  "E:/Project/shrita/", title = "Select A File", filetype =(("png files","*.png"),("all files","*.*")))
+       log.filename = filedialog.askopenfilename(initialdir =  "task/", title = "Select A File", filetype =(("png files","*.png"),("all files","*.*")))
        #print("name:" , root.filename)
        loc1 = log.filename
        my_label1 = Label(log,text = log.filename)
